@@ -10,6 +10,6 @@ import UIKit
 
 public class Colors {
     
-    static let blueColor =  UIColor.blue
+    static let blueColor =  UIColor(colorLiteralRed: 41/255, green: 128/255, blue: 185/255, alpha: 1.0)
     
 }

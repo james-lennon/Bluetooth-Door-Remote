@@ -16,7 +16,14 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /* config */
         view.backgroundColor = UIColor.white
+        
+        /* add subviews */
+        view.addSubview(unlockButton)
+        
+        /* config subviews */
+        unlockButton.frame = view.frame
         
     }
     
