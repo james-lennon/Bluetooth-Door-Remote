@@ -15,6 +15,7 @@
 		9D6881031DB1D548003E7883 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6881021DB1D548003E7883 /* MainViewController.swift */; };
 		9D6881071DB1D944003E7883 /* UnlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6881061DB1D944003E7883 /* UnlockButton.swift */; };
 		9D6881091DB1D976003E7883 /* BluetoothModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6881081DB1D976003E7883 /* BluetoothModel.swift */; };
+		9DAB4A501DB1DC48007CA7FA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB4A4F1DB1DC48007CA7FA /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9D6881021DB1D548003E7883 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		9D6881061DB1D944003E7883 /* UnlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnlockButton.swift; path = Views/UnlockButton.swift; sourceTree = "<group>"; };
 		9D6881081DB1D976003E7883 /* BluetoothModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothModel.swift; path = Model/BluetoothModel.swift; sourceTree = "<group>"; };
+		9DAB4A4F1DB1DC48007CA7FA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Util/Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		9D6880D01DB1D431003E7883 /* BluetoothDoorRemote */ = {
 			isa = PBXGroup;
 			children = (
+				9DAB4A4E1DB1DC2D007CA7FA /* Util */,
 				9D6881011DB1D527003E7883 /* Views */,
 				9D6881001DB1D519003E7883 /* Models */,
 				9D6880FF1DB1D50F003E7883 /* Controllers */,
@@ -150,6 +153,14 @@
 				9D6881061DB1D944003E7883 /* UnlockButton.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		9DAB4A4E1DB1DC2D007CA7FA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9DAB4A4F1DB1DC48007CA7FA /* Colors.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				TargetAttributes = {
 					9D6880CD1DB1D431003E7883 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AB4XV24HJZ;
 						ProvisioningStyle = Automatic;
 					};
 					9D6880E11DB1D431003E7883 = {
@@ -286,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D6881031DB1D548003E7883 /* MainViewController.swift in Sources */,
+				9DAB4A501DB1DC48007CA7FA /* Colors.swift in Sources */,
 				9D6881071DB1D944003E7883 /* UnlockButton.swift in Sources */,
 				9D6880D21DB1D431003E7883 /* AppDelegate.swift in Sources */,
 				9D6881091DB1D976003E7883 /* BluetoothModel.swift in Sources */,
@@ -432,9 +445,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AB4XV24HJZ;
 				INFOPLIST_FILE = BluetoothDoorRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jameslennon.BluetoothDoorRemote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslennon.bluetoothdoorremote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -444,9 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AB4XV24HJZ;
 				INFOPLIST_FILE = BluetoothDoorRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jameslennon.BluetoothDoorRemote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameslennon.bluetoothdoorremote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -525,6 +540,7 @@
 				9D6880F81DB1D431003E7883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6880F91DB1D431003E7883 /* Build configuration list for PBXNativeTarget "BluetoothDoorRemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +549,7 @@
 				9D6880FB1DB1D431003E7883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6880FC1DB1D431003E7883 /* Build configuration list for PBXNativeTarget "BluetoothDoorRemoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +558,7 @@
 				9D6880FE1DB1D431003E7883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

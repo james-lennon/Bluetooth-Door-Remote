@@ -11,4 +11,16 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    private let unlockButton = UnlockButton()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.white
+        
+        
+        
+        
+    }
+    
 }
