@@ -18,9 +18,6 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
         
-        
-        
-        
     }
     
 }
