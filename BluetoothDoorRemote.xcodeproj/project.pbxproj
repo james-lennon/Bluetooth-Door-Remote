@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		9D6880D21DB1D431003E7883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6880D11DB1D431003E7883 /* AppDelegate.swift */; };
 		9D6880D41DB1D431003E7883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6880D31DB1D431003E7883 /* ViewController.swift */; };
-		9D6880D71DB1D431003E7883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6880D51DB1D431003E7883 /* Main.storyboard */; };
 		9D6880D91DB1D431003E7883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6880D81DB1D431003E7883 /* Assets.xcassets */; };
 		9D6880DC1DB1D431003E7883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6880DA1DB1D431003E7883 /* LaunchScreen.storyboard */; };
 		9D6880E71DB1D431003E7883 /* BluetoothDoorRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6880E61DB1D431003E7883 /* BluetoothDoorRemoteTests.swift */; };
 		9D6880F21DB1D431003E7883 /* BluetoothDoorRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6880F11DB1D431003E7883 /* BluetoothDoorRemoteUITests.swift */; };
+		9D6881031DB1D548003E7883 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6881021DB1D548003E7883 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		9D6880CE1DB1D431003E7883 /* BluetoothDoorRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothDoorRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6880D11DB1D431003E7883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D6880D31DB1D431003E7883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D6880D61DB1D431003E7883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D6880D81DB1D431003E7883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6880DB1DB1D431003E7883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6880DD1DB1D431003E7883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		9D6880ED1DB1D431003E7883 /* BluetoothDoorRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothDoorRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6880F11DB1D431003E7883 /* BluetoothDoorRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDoorRemoteUITests.swift; sourceTree = "<group>"; };
 		9D6880F31DB1D431003E7883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6881021DB1D548003E7883 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,11 @@
 		9D6880D01DB1D431003E7883 /* BluetoothDoorRemote */ = {
 			isa = PBXGroup;
 			children = (
+				9D6881011DB1D527003E7883 /* Views */,
+				9D6881001DB1D519003E7883 /* Models */,
+				9D6880FF1DB1D50F003E7883 /* Controllers */,
 				9D6880D11DB1D431003E7883 /* AppDelegate.swift */,
 				9D6880D31DB1D431003E7883 /* ViewController.swift */,
-				9D6880D51DB1D431003E7883 /* Main.storyboard */,
 				9D6880D81DB1D431003E7883 /* Assets.xcassets */,
 				9D6880DA1DB1D431003E7883 /* LaunchScreen.storyboard */,
 				9D6880DD1DB1D431003E7883 /* Info.plist */,
@@ -123,6 +125,28 @@
 				9D6880F31DB1D431003E7883 /* Info.plist */,
 			);
 			path = BluetoothDoorRemoteUITests;
+			sourceTree = "<group>";
+		};
+		9D6880FF1DB1D50F003E7883 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D6881021DB1D548003E7883 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9D6881001DB1D519003E7883 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D6881011DB1D527003E7883 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +258,6 @@
 			files = (
 				9D6880DC1DB1D431003E7883 /* LaunchScreen.storyboard in Resources */,
 				9D6880D91DB1D431003E7883 /* Assets.xcassets in Resources */,
-				9D6880D71DB1D431003E7883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6881031DB1D548003E7883 /* MainViewController.swift in Sources */,
 				9D6880D41DB1D431003E7883 /* ViewController.swift in Sources */,
 				9D6880D21DB1D431003E7883 /* AppDelegate.swift in Sources */,
 			);
@@ -296,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9D6880D51DB1D431003E7883 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D6880D61DB1D431003E7883 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9D6880DA1DB1D431003E7883 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
